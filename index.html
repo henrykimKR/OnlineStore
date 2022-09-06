@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- Change this to your name-->
+    <meta name="author" content="Seonghoon Kim" />
+
+    <title>WEB222 Store</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 1ch;
+        column-gap: 1ch;
+      }
+
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        /* margin: auto; */
+        border-radius: 5px;
+        text-align: center;
+        /* height: 700px; */
+      }
+
+      .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+      }
+
+      .price {
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      .card-image {
+        border-radius: 5px 5px 0 0;
+      }
+
+      img {
+        border-radius: 5px 5px 0 0;
+        width: 300px;
+        height: 150px;
+        object-fit: cover;
+      }
+    </style>
+    <!-- Classless CSS Stylesheet - https://oxal.org/projects/sakura/ -->
+    <link rel="stylesheet" href="./css/sakura.css" type="text/css" />
+  </head>
+
+  <body>
+    <header>
+      <!-- Change this to your Store's info -->
+      <h1>Marvelous Weapons</h1>
+      <p>What if there are weapons that seem to exist in your imagination...?</p>
+    </header>
+
+    <nav id="menu">
+      <!-- Dynamically create your menu category buttons here -->
+    </nav>
+
+    <hr />
+
+    <main>
+      <h2 id="selected-category">
+        <!-- Dynamically update the selected category title -->
+      </h2>
+
+      <table id="products-table">
+        <!-- Statically create the headings for your table here -->
+
+        <tbody id="category-products">
+          <!-- Dynamically create your product rows here -->
+        </tbody>
+      </table>
+    </main>
+
+    <!-- <div class="container">
+    <div class="card">
+      <img src="https://static.wikia.nocookie.net/leagueoflegends/images/a/a5/Goredrinker_item_HD.png/"
+        alt="Goredrinker" style="width:100%">
+
+      <h3>Goredrinker</h3>
+      <p>The effect of use was an option to restore physical strength in proportion to the number of enemy champions
+        hit by a wide-area attack of a steel thorn whip.</p>
+      <p class="price">$4,500 CAD</p>
+    </div>
+
+    <div class="card">
+      <img src="https://static.wikia.nocookie.net/leagueoflegends/images/a/a5/Goredrinker_item_HD.png/"
+        alt="Goredrinker" style="width:100%">
+
+      <h3>Goredrinker</h3>
+      <p>The effect of use was an option to restore physical strength in proportion to the number of enemy champions
+        hit by a wide-area attack of a steel thorn whip.</p>
+      <p class="price">$4,500 CAD</p>
+    </div>
+  </div> -->
+
+    <!-- JavaScript Data Files -->
+    <script src="./js/categories.js"></script>
+    <script src="./js/products.js"></script>
+
+    <!-- Main App JavaScript File -->
+    <script src="./js/app.js"></script>
+  </body>
+</html>
